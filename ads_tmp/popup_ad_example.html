@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹窗广告测试页</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        /* 模拟弹窗容器 */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* 半透明背景 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; /* 确保在最上层 */
+        }
+        .popup-ad-box {
+            background-color: #ffffff;
+            padding: 30px;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            position: relative;
+            border: 3px solid #007bff;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #999;
+        }
+        .ad-content {
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>正常网页内容</h1>
+    <p>这是一个正常的网页，下面有大量的滚动内容，但被一个弹窗广告覆盖。</p>
+    <p style="height: 1500px;">向下滚动以确保弹窗广告是固定在屏幕上的。</p>
+    
+    <div class="modal-overlay" id="test-popup-ad">
+        <div class="popup-ad-box">
+            <span class="close-btn" onclick="document.getElementById('test-popup-ad').style.display='none';">&times;</span>
+            <span style="font-size: 10px; color: #555;">AD</span>
+            <h2>🔥 独家限时优惠弹窗！</h2>
+            <div class="ad-content">
+                <p>不要错过！立即注册，享受 50% 折扣！</p>
+                <img src="https://via.placeholder.com/400x150?text=400x150+Popup+Ad" alt="弹窗广告图片" style="width: 100%; margin: 15px 0;">
+                <button style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">立即查看</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

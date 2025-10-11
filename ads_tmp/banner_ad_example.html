@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横幅广告测试页</title>
+    <style>
+        body { font-family: Georgia, serif; max-width: 800px; margin: 20px auto; line-height: 1.8; }
+        .banner-ad {
+            /* 模拟横幅广告的常见特征 */
+            width: 100%;
+            height: 100px;
+            margin: 30px 0; /* 在内容之间留出间距 */
+            background-color: #ffe4e1; /* 浅红色背景 */
+            border: 1px dashed #ff69b4; /* 粉色虚线边框 */
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-size: 16px;
+        }
+        .ad-text {
+            font-weight: bold;
+            color: #ff0000;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>深入解析现代互联网广告生态</h1>
+    <p>文章第一段：广告过滤工具的主要挑战之一是区分合法内容和植入式广告。很多网站为了绕过传统过滤机制，会将广告以看似自然的方式内嵌到内容流中。</p>
+
+    <div class="banner-ad" id="test-banner-ad">
+        <span style="font-size: 10px; color: #777; position: absolute; top: 5px; right: 10px;">AD</span>
+        <span>您的工具是否能移除这个横幅广告？</span>
+        <span class="ad-text">[点击此处获取免费电子书]</span>
+    </div>
+
+    <p>文章第二段：这种内嵌横幅广告的难点在于，它们不使用通用的广告域名或脚本，而是直接作为网页结构的一部分加载。一个高效的过滤工具必须依赖于结构分析和行为判断来识别它们。</p>
+    
+    <div class="banner-ad" id="test-banner-ad-2" style="height: 250px; background-color: #e6f7ff; border-color: #1890ff;">
+        <img src="https://via.placeholder.com/728x90?text=728x90+Large+Banner+AD" alt="模拟大横幅广告" style="width: 80%; max-height: 90px;">
+    </div>
+
+    <p>文章第三段：我们希望确保工具能够处理各种尺寸和颜色模式的广告，以提供最佳的用户体验。</p>
+
+</body>
+</html>
